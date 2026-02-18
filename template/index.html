@@ -1,52 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Species Catalogue</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Species Catalogue</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
-
 <body>
-
-    <div class="main-container">
-
-        <div class="card">
-            <h1>🌿 Species Catalogue</h1>
-            <p class="subtitle">
-                Discover scientific details about plants, animals, fungi and more.
-            </p>
-    
-            <div class="search-container">
-                <input 
-                    type="text" 
-                    id="searchInput"
-                    placeholder="Try: Lion, Panthera leo, Monarch butterfly..."
-                >
-                <button id="searchBtn">Search</button>
-            </div>
-    
-            <div class="hint-section">
-                <span class="hint-label">Popular searches:</span>
-                <div class="hint-tags">
-                    <span class="tag">Lion</span>
-                    <span class="tag">Ginkgo biloba</span>
-                    <span class="tag">Monarch butterfly</span>
-                    <span class="tag">Blue whale</span>
-                </div>
-            </div>
-    
-            <div id="results" class="results-grid"></div>
-    
-        </div>
-    
+  <div class="container">
+    <div class="content">
+      <h1>Species Catalogue</h1>
+      <p class="subtitle">Find info about any species!</p>
+      
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search by common name or scientific name..."
+        />
+        <button id="searchBtn">Enter</button>
+      </div>
+      
+      <p class="tip">Tip: Try "Panthera leo", "Monarch butterfly", or "Ginkgo biloba".</p>
+      
+      <div id="resultsArea"></div>
     </div>
-
-    <script src="/static/script.js"></script>
+  </div>
+  
+  <script src="/static/script.js"></script>
 </body>
-
 </html>
